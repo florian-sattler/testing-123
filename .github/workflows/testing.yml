@@ -19,10 +19,11 @@ jobs:
       - name: git user
         run: |
           git config --global user.name "Florian Sattler"
-          git config --global user.email "dev@florian-sattler.de"
+          git config --global user.email "florian-sattler@users.noreply.github.com"
 
       - name: fiddling around
         run: |
-          git remote rm origin
-          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git remote show origin
+          date > test.txt
+          git add test.txt
+          git commit -m "added test"
+          git push
