@@ -14,7 +14,7 @@ jobs:
         run: env | sort
 
       - name: fiddling around
-        run: /usr/bin/git config --get user.name
+        run: /usr/bin/git config status
 
       - name: fiddling around
-        run: /usr/bin/git config --get user.email
+        run: /usr/bin/git config user.email
