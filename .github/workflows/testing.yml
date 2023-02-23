@@ -3,7 +3,8 @@ name: CI
 on:
   workflow_dispatch:
 
-permissions: write-all
+permissions:
+  contents: write
 
 jobs:
   test:
