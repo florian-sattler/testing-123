@@ -14,7 +14,7 @@ jobs:
         run: env | sort
 
       - name: fiddling around
-        run: /usr/bin/git config status
+        run: /usr/bin/git status
 
       - name: fiddling around
-        run: /usr/bin/git config user.email
+        run: /usr/bin/git config user.email || echo "nothing here"
